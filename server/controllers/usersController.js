@@ -30,7 +30,7 @@ export async function authenticatUser(req, res, next) {
       const token = sign(
         {
           email: user.email,
-          nombre: user.nombre,
+          nombre: user.name,
           id: user._id,
         },
         "MOTSECRET",
